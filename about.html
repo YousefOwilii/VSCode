@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAS - About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=18+Khebrat+Musamim&display=swap" rel="stylesheet">
+    <script src="logic.js"></script>
+
+    <style>
+        #text {
+            max-width: 60vw;
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .textbox2 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .stories_About {
+                font-size: 20px;
+                max-width: 40vw;
+            }
+
+            #text {
+                max-width: 40vw;
+                font-size: 20px;
+            }
+
+            .name_About {
+                max-width: 40vw;
+                font-size: 20px;
+            }
+
+            .imgholder {
+                margin-right: 0;
+                max-width: 20vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #text {
+                display: inline;
+                border-right: 2px solid;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-left: 0;
+                font-family: "San Francisco";
+                font-size: 25px;
+                margin-top: 0;
+            }
+
+            .name_About {
+                margin-bottom: 0;
+                margin-left: 0;
+                font-family: "San Francisco";
+                font-size: 25px;
+            }
+
+            .textbox2 {
+                margin-top: 80px;
+            }
+
+            .typewriter {
+                margin-top: 0;
+            }
+
+            .imgholder {
+                display: none;
+            }
+        }
+
+        .container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="Logo.png" class="headerEmblem" alt="TAS Logo" href="index.html">
+        <img src="Logo.png" class="headerEmblem2" alt="TAS Logo">
+        <a href="index.html"> <h4 class="Home">HOME</h4> </a>
+        <a href="Products.html"><h4 class="Newsletter" href="">PRODUCTS</h4></a>
+        <h4>ABOUT</h4>
+        <a href="Contact.html"><h4 class="Touch" href="">CONTACT US</h4></a>
+    </nav>
+
+    <div class="container" style="display: none;"> </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; width: 100%;">
+        <div>
+            <p style="margin-top: 50px; font-family: '18 Khebrat Musamim'; font-size: 3em; text-align: center;">مؤسسة عبر البحار العربية</p>
+        </div>
+        <div>
+            <p style="text-align: center; font-family: 'San Francisco'; font-size: 1.5em;">Since 1998</p>
+        </div>
+    </div>
+
+    <div style="display: flex; width: 90%; flex-direction: column; font-family: 'San Francisco'; font-size: 1.5em; margin-top: 50px; margin-left: 5%; margin-right: 5%; text-align: left;">
+        <h2>About us</h2>
+        <p>
+            <b>Business Goal:</b> To get it right the first time, every time and strive to exceed customer expectations whenever possible.
+        </p>
+        <p>
+            <b>Business Management Process:</b> Our business system will conform to the requirements of NFPA standards.
+        </p>
+        <p>
+            <b>Business Principles:</b> Quality derives from a staff commitment to service and excellence. This belief is stated as business principles.
+        </p>
+        <p>
+            <b>Customer Focus:</b> Customer requirements come first. Quality begins and ends with the customer and we strive to always satisfy their needs.
+            This is reflected in our flexibility - both as individuals and as an organization.
+        </p>
+        <p>
+            <b>Relationships:</b> We build mutually beneficial relationships with customers and suppliers.
+        </p>
+        <p>
+            <b>Innovation:</b> We search for, design and supply creative products and services.
+        </p>
+        <p>
+            <b>Teamwork:</b> Our Employees work together as a team to satisfy our customers.
+        </p>
+        <p>
+            <b>Process Emphasis:</b> We focus our Employees on practical processes to ensure consistent results.
+        </p>
+        <p>
+            <b>Continual Improvement:</b> Through management review of our Business Management System we aim to continually improve business performance, processes, products and services.
+        </p>
+        <p>
+            <b>Employee Development:</b> Through active mentoring we create a culture where staff have the skills and are empowered to take responsibility for the results of their actions which contributes to the success of the company.
+        </p>
+    </div>
+
+    <h2 style="display: flex;
+    justify-content: start;
+    margin-left: 10vw;
+    font-size: 3em;
+    font-family: 'Koulen', sans-serif; margin-top: 120px;">Brochure</h2>
+
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <div style="display: flex; width: 100%; justify-content: center;">
+            <button style="margin-top: 50px; width: 40%; height: 50px; background: linear-gradient(rgb(0, 171, 17), rgb(14, 98, 28)); color: white; font-family: San Francisco; font-size: 100%; border-radius: 17px; cursor: pointer;">Download Brochure</button>
+        </div>
+    </div>
+
+    <h2 style="display: flex;
+    justify-content: start;
+    margin-left: 10vw;
+    font-size: 3em;
+    font-family: 'Koulen', sans-serif; margin-top: 120px;">Organization Chart</h2>
+
+    <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 200px;">
+        <img src="Organization chart.png" style=" min-width: 50%; max-width: 70%;">
+    </div>
+
+    <div id="scrollToFirst"></div>
+    <div id="scrollToSecond"></div>
+    <div class="container"></div>
+
+        
+        
+
+
+
+    <div id="phoneMenu" class="phone-menu">
+        <div class="menu-content">
+            <span class="close-menu">&times;</span>
+            <a href="index.html"> <h4 class="Home">HOME</h4> </a>
+            <a href="Products.html"><h4 class="Newsletter" href="">PRODUCTS</h4></a>
+            <h4 class="About">ABOUT</h4>
+            <a href="Contact.html"><h4 class="Touch" href="">CONTACT US</h4></a>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+</body>
+
+<footer>
+    <div class="footerleft">
+        <div class="footer1">
+            <img src="Logo.png" alt="TAS Logo" href="index.html" style="max-height: 70px;">
+            <div class="vertical-divider"></div>
+            <p style="font-family: 'San Francisco'; font-size: 1.5em;">Since 1998</p>
+            <div class="vertical-divider"></div>
+            <p style="font-family: 'San Francisco';  font-size: 1em; min-width: 370px;">Office: 3865 King fahd st. Madinat Al Umal, Dammam 32253<br>Inventory: Abu Al Hassah Zahrawy Street, Al Khalidiyah Ash Shamaliyah, Dammam 32231<br>C.R2050036728
+                <br>   Tel.: 013 - 8141435 , Fax: 013 - 857 8228, Phone: 056 096 0030</p>
+        </div>
+        <div class="footer2">
+            <p>© Trans Arabian Seas Trading Inc. 2024. All rights reserved. <br>Support: <b>sales@transarabianseas.com</b></p>
+            <a target=”_blank” href="https://www.facebook.com/profile.php?id=100071247940162&mibextid=rS40aB7S9Ucbxw6v"> <img src="facebook_icon.png" alt="Facebook" class="footer_images"></a>
+        </div>
+    </div>
+    <div class="footerphone">
+        <div class="footerphone1">
+            <img src="Logo.png" alt="TAS Logo" href="index.html" style="max-height: 70px;">
+        <div class="vertical-divider"></div>
+        <p style="font-family: 'San Francisco'; font-size: 1.5em;">Since 1998</p>
+        </div>
+        <div class="footerphone2">
+            <p style="font-family: 'San Francisco';  font-size: 1em; min-width: 370px;">Office: 3865 King fahd st. Madinat Al Umal, Dammam 32253<br>Inventory: Abu Al Hassah Zahrawy Street, Al Khalidiyah Ash Shamaliyah, Dammam 32231<br>C.R2050036728
+                <br>   Tel.: 013 - 8141435 , Fax: 013 - 857 8228, Phone: 056 096 0030</p>
+        </div>
+        <div class="footerphone3">
+            <p>© Trans Arabian Seas Trading Inc. 2024. All rights reserved. <br>Support: <b>sales@transarabianseas.com</b></p>
+        <a target=”_blank” href="https://www.facebook.com/profile.php?id=100071247940162&mibextid=rS40aB7S9Ucbxw6v"> <img src="facebook_icon.png" alt="Facebook" class="footer_images"></a>
+        </div>
+</div>
+</footer>
+</html>
