@@ -379,6 +379,43 @@ section {
     z-index: 2;
 }
 
+.text-block-line {
+    display: flex;
+    justify-content: center;
+    font-family: 'San Francisco';
+    gap: 30px;
+}
+
+.about-us {
+    display: none;
+}
+
+.about-us {
+
+    width: 90%;
+    flex-direction: column;
+    font-family: 'San Francisco';
+    font-size: 1em;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+}
+
+.divtop {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-block {
+    width: 30%;
+}
+
 @keyframes moveText {
     0% {
         top: 30%;
@@ -1272,5 +1309,12 @@ footer {
     white-space: nowrap;
 }
 
+.about-us {
+    display: flex;
+}
+
+.divtop {
+    display: none;
+}
 
 }
