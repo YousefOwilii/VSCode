@@ -416,6 +416,9 @@ section {
     width: 30%;
 }
 
+.t {}
+}
+
 @keyframes moveText {
     0% {
         top: 30%;
