@@ -286,40 +286,41 @@ section {
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
   }
 
-  @keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
+  @keyframes slide_animation {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+    20% { transform: translateX(-100vw); }
+    30% { transform: translateX(-100vw); }
+    40% { transform: translateX(-200vw); }
+    50% { transform: translateX(-200vw); }
+    60% { transform: translateX(-100vw); }
+    70% { transform: translateX(-100vw); }
+    80% { transform: translateX(0); }
+    90% { transform: translateX(0); }
+    100% { transform: translateX(0); }
 }
 
-@-webkit-keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
+@-webkit-keyframes slide_animation {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+    20% { transform: translateX(-100vw); }
+    30% { transform: translateX(-100vw); }
+    40% { transform: translateX(-200vw); }
+    50% { transform: translateX(-200vw); }
+    60% { transform: translateX(-100vw); }
+    70% { transform: translateX(-100vw); }
+    80% { transform: translateX(0); }
+    90% { transform: translateX(0); }
+    100% { transform: translateX(0); }
 }
 
-.slide-images{
+.slide-images {
     opacity: 0.4;
-    width: 3600px;
+    width: 300vw; /* 3 images each 100vw */
     height: 100vh;
-    margin: 0 0 0 -2400px;
+    margin: 0;
     position: absolute;
+    display: flex; /* Use flexbox to ensure images are laid out side by side */
     -webkit-animation-name: slide_animation;
     animation-name: slide_animation;
     -webkit-animation-duration: 33s;
@@ -328,24 +329,24 @@ section {
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
     z-index: 10;
 }
 
-.img-container{
+.img-container {
     height: 100vh;
-    width: 1200px;
+    width: 100vw; /* Make each image container take the full width of the viewport */
     position: relative;
-    float: left;
-    z-index: 10;
+    flex-shrink: 0; /* Ensure the containers don't shrink */
 }
 
 .slide-images img {
     height: 100%;
-    width: 100vw;
+    width: 100%; /* Ensure images fill their containers */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
     z-index: 10;
 }
+
+
 
 
 
@@ -862,6 +863,11 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: center;
+}
+
+.services2 p {
+    font-size: 1.5em;
 }
 
 .services3 {
