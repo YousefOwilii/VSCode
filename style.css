@@ -20,6 +20,11 @@ nav {
     position: relative; /* Ensure it is positioned to respect z-index */
 }
 
+@font-face {
+    font-family: "18 Khebrat Musamim";
+    src: url("18 Khebrat Musamim Bold.ttf");
+}
+
 
 
 nav img.headerEmblem {
