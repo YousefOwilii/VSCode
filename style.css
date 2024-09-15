@@ -870,10 +870,11 @@ body.no-scroll {
     flex-direction: column;
     width: 50%;
     justify-content: center;
+    gap: 10%;
 }
 
 .services2 p {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .services3 {
@@ -931,6 +932,26 @@ body.no-scroll {
 
 /* End of About Section */
 
+/* Two buttons CTA services section */
+
+.services_cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+}
+
+.services_cta button {
+    border-radius: 5px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: #ff4d4d;
+    border-style: none;
+    color: white;
+}
+
+/* End of two buttons CTA services section */
 
 @media screen and (max-width: 600px) {
     nav h4 {
@@ -1242,7 +1263,8 @@ body.no-scroll {
     flex-direction: column;
     width: 80%;
     margin-left: 10%;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .services2 {
@@ -1250,10 +1272,19 @@ body.no-scroll {
     flex-direction: column;
     width: 100%;
     font-size: 80%;
+    gap: 10px;
+}
+
+.services_cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 .services3 {
-    display: flex;
+    display: none;
     width: 100%;
     margin-top: 20px;
     justify-content: center;
