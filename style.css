@@ -953,6 +953,97 @@ body.no-scroll {
 
 /* End of two buttons CTA services section */
 
+/* Download brochure Section */
+.download_brochure_div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+
+.download_brochure_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-size: 1.05em;
+    max-width: 75%;
+    padding-right: 20px;
+}
+
+.download_brochure_image {
+    width: 20%;
+    max-width: 400px;
+    height: auto;
+}
+
+.download_brochure_image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.download_brochure_button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(189, 0, 0), rgb(98, 14, 14));
+    color: white;
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-size: 1em;
+    border-radius: 17px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.download_brochure_button:hover {
+    background: rgb(98, 14, 14);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .download_brochure_div {
+        flex-direction: column;
+    }
+    
+    .download_brochure_text {
+        max-width: 100%;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    
+    .download_brochure_image {
+        width: 70%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+}   
+
+/* End of Download brochure Section */
+
+.organization_chart {
+    width: 20%;
+    max-width: 400px;
+    height: auto;
+}
+
+#lens {
+    height: 125px;
+    width: 125px;
+    border: 2px solid black;
+}
+
+.organization_chart img {
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 600px) {
     nav h4 {
         display: none;

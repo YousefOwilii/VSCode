@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=18+Khebrat+Musamim&display=swap" rel="stylesheet">
     <script src="logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
 
     <style>
         #text {
@@ -208,11 +209,15 @@
     font-size: 3em;
     font-family: 'Koulen', sans-serif; margin-top: 120px;">Brochure</h2>
 
-    <div style="display: flex; justify-content: center; width: 100%;">
-        <div style="display: flex; width: 100%; justify-content: center;">
-            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'" style="margin-top: 50px; width: 40%; height: 50px; background: linear-gradient(rgb(0, 171, 17), rgb(14, 98, 28)); color: white; font-family: San Francisco; font-size: 100%; border-radius: 17px; cursor: pointer;">Download Brochure</button>
-        </div>
+<div class="download_brochure_div">
+    <div class="download_brochure_text">
+        <p>Explore our brochure to learn more about our full range of services, including the supply, installation, and maintenance of firefighting systems, fire alarm systems, and various pumps. It highlights our commitment to quality, innovation, and customer satisfaction, providing a detailed overview of how we can meet your safety and operational needs.</p>
+        <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'" class="download_brochure_button">Download Brochure</button>
     </div>
+    <div class="download_brochure_image">
+        <img src="brochure_mockup.webp" alt="Brochure Image">
+    </div>
+</div>
 
     <h2 style="display: flex;
     justify-content: start;
@@ -220,9 +225,23 @@
     font-size: 3em;
     font-family: 'Koulen', sans-serif; margin-top: 120px;">Organization Chart</h2>
 
-    <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 200px;">
-        <img src="Organization chart.png" style=" min-width: 50%; max-width: 70%;">
+
+<link rel="stylesheet" href="magnify.css">
+<script src="jquery.magnify.js" charset="UTF-8"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<div class="download_brochure_div">
+    <div class="download_brochure_text">
+        <p>This is the organization chart of our company, starting from the General Manager at the top, who oversees the entire operation. Under the General Manager, we have key departments such as Engineering, which includes Marketing & Sales, Tender, Executive, and Quality divisions. These departments handle everything from client relations and project management to technical evaluations. Additionally, there are supporting departments like Financial, Legal Affairs, and Administrative Affairs, which manage finances, legal matters, IT, human resources, and general administration. Each department plays a crucial role in ensuring the company runs smoothly and efficiently.</p>
     </div>
+    <div class="organization_chart" id="organization_chart">
+        <img src="Organization chart.png" id="image" class="zoom" data-magnify-src="Organization chart.png">
+        <script>
+            $(document).ready(function() {
+              $('.zoom').magnify();
+            });
+            </script>
+    </div>
+</div>
 
     <div id="scrollToFirst"></div>
     <div id="scrollToSecond"></div>
