@@ -26,13 +26,16 @@
             <div class="contact_elements">
                 <div class="contact_input">
                     <h1>Shoot us a message directly from the website</h1>
-                    <div class="contactinput">
-                        <textarea placeholder="Example: I have this amazing idea I wanted to share with you!"></textarea>
-                    </div>
-                    <div class="emailinputcontact">
-                        <input type="email" placeholder="Enter your email address" class="emailcontactinput">
-                        <button type="submit" class="submitbtn">SUBMIT</button>
-                    </div>
+                    <form action="https://formsubmit.co/yousefowili_official@outlook.com" method="POST">
+                        <div class="contactinput">
+                            <textarea placeholder="Example: I have this amazing idea I wanted to share with you!" name="message"></textarea>
+                        </div>
+                        <div class="emailinputcontact">
+                            <input name="email" type="email" placeholder="Enter your email address" class="emailcontactinput">
+                            <button type="submit" class="submitbtn">SUBMIT</button>
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+                    </form>
                 </div>
 
                 <div class="contact_img">
