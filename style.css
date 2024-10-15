@@ -1553,3 +1553,17 @@ footer {
 /* End of About Section */
 
 }
+
+.maintenance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    font-family: 'San Francisco';
+    font-size: 1.4em;
+}
+
+.maintenance img {
+    width: 25%;
+}
