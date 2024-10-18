@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Scroll Animation
     const animText = document.getElementById('animText');
-    const container = document.querySelector('.container');
+    const container = document.querySelector('.containerr');
     let lastScrollTop = 0;
 
     container.addEventListener('scroll', () => {
