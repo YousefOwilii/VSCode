@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let charIndex = 0;
     let currentText = '';
     let isDeleting = false;
-    const typingSpeed = 200; // speed of typing
+    const typingSpeed = 100; // speed of typing
     const deletingSpeed = 50; // speed of deleting
 
     function type() {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         textDisplay.textContent = currentText;
 
         if (!isDeleting && charIndex === texts[index].length) {
-            setTimeout(() => isDeleting = true, 1000); // pause before deleting
+            setTimeout(() => isDeleting = true, 1250); // pause before deleting
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             index = (index + 1) % texts.length;

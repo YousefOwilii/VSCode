@@ -626,7 +626,7 @@ body.no-scroll {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    width: 30%; /* Adjust width as needed */
+    width: 30%;
 }
 
 
@@ -1571,3 +1571,17 @@ footer {
 .maintenance img {
     width: 25%;
 }
+
+@media screen and (min-width: 768px) {
+
+    .bigPic {
+      margin: auto;
+      max-width: 80%;
+    }
+
+    .smallPic {
+        margin: auto;
+        width: 80%;
+    }
+
+  }
