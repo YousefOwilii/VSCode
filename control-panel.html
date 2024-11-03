@@ -16,11 +16,20 @@
             margin-left: 0;
         }
 
-        @media screen and (max-width: 1440px) {
+        @media screen and (min-width: 764px) {
+            .random {
+                width: 40%;
+            }
+        }
+
+        .random {
+            width: 80%;
         }
     </style>
+    
 </head>
 <body>
+    <script src="https://cdn.tailwindcss.com"></script>
     <nav>
         <img src="Logo.png" class="headerEmblem" alt="TAS Logo" href="index.html">
         <img src="Logo.png" class="headerEmblem2" alt="TAS Logo">
@@ -32,22 +41,148 @@
 
 
     <div style="width: 100%; height: 50px;"></div>
-    <div class="categories-box">
-        <script src="logic.js"></script>
-        <div class="category" id="category1" onclick="window.location.href='under-maintainence.html'">
-            <img src="end-suction-diesel-engine-centrifugal-fireb1eff1d0-2645-4209-a0f4-942251a7f282.webp" alt="Fire Suppression Systems" class="cta-icon">
-            <p>VERTICAL MULTI STAGE CENTRIFUGAL PUMP</p>
+        <div class="w-full flex md:flex-row flex-col-reverse justify-center items-center md:px-32">
+            <div style="width: 60%;" class="flex flex-col">
+                <h2 style="display: flex;
+                    font-size: 3em;
+                    font-family: 'Koulen', sans-serif;">Fire Pump Control Panel</h2>
+                <p style="font-family: 'San Francisco';" class="text-xl">Efficient and compliant fire pump control panel designed for industrial and commercial applications, offering reliable performance, robust construction, and adherence to IEC safety standards.</p>
+                <div class="flex mt-8">
+                    <div class="services_cta justify-center">
+                        <button onclick="window.location.href='Contact.html'">Ask about more info</button>
+                        <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'">Check out the brochure</button>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 40%;" class="flex justify-center">
+                <img src="controlpanel.webp" alt="Control Panel">
+            </div>
         </div>
-        <div class="category" onclick="window.location.href='under-maintainence.html'">
-            <img src="img-8685-500x500.webp" alt="Fire Fighting Equipment" class="cta-icon">
-            <p>DIESEL ENGINE DRIVER</p>
+
+
+    <div class="bg-slate-100 flex flex-col justify-center items-center md:px-32 md:text-2xl text-xl py-10 my-11">
+        <div  class="w-3/4 font-medium" style="font-family: 'San Francisco';">
+        <p>
+            Our fire pump control panels are engineered to provide dependable control and monitoring for fire suppression systems in demanding industrial and commercial environments. Built with high-quality materials and designed for ease of use, these panels ensure safe and efficient operation when it matters most. With advanced protection features and compliance with IEC standards, our control panels are a reliable choice for facilities prioritizing safety and durability.
+        </p>
+        </div>
+        <div class="w-3/4 font-medium" style="font-family: 'San Francisco';">
+            <h3 class="font-bold mt-8">Material and Build:</h3>
+            <ul class="list-disc list-inside">
+                <li class="listLeft">Made from high-quality electro-galvanized steel with a sheet thickness of up to 1.2 mm, ensuring durability and resistance to environmental factors.</li>
+            </ul>
+            <h3 class="font-bold mt-8">Finish:</h3>
+            <ul class="list-disc list-inside">
+                <li class="listLeft">Matt-finish polyester powder-coated in RAL-7035 light gray, providing a clean, professional appearance and increased resistance to corrosion.</li>
+            </ul>
+            <h3 class="font-bold mt-8">Compliance:</h3>
+            <ul class="list-disc list-inside">
+                <li class="listLeft">Meets IEC 60529 standards, demonstrating adherence to international safety and quality requirements.</li>
+            </ul>
+            <h3 class="font-bold mt-8">Degree of Protection:</h3>
+            <ul class="list-disc list-inside">
+                <li class="listLeft">IP41 rating, offering protection against solid objects larger than 1mm and limited protection against water ingress.</li>
+            </ul>
         </div>
     </div>
-    <div style="width: 100%; height: 50px;"></div>
 
 
+    <div class="w-full flex md:flex-row-reverse flex-col-reverse justify-center items-center md:px-32">
+        <div style="width: 80%;" class="flex flex-col md:flex-row">
+            
+            <div class="w-full font-medium" style="font-family: 'San Francisco';">
+                <h3 class="font-bold mt-8">Power Indicator:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Displays the power status of the control panel, ensuring the system is ready for operation.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Run Indicator:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Indicates when the pump is actively running, providing a quick visual cue for system activity.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Trip Indicator:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Alerts operators to any circuit interruptions, helping to identify and address faults swiftly.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Low-Level Indicator:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Notifies the user of low water or fuel levels, which may need attention to ensure continuous operation.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Selector Switch:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Allows manual or automatic selection, offering flexibility in operation modes to suit different scenarios.</li>
+                </ul>
+            </div>
 
+            <div class="flex mt-8">
+                <div class="services_cta justify-center md:flex-col">
+                    <button onclick="window.location.href='Contact.html'">Ask about more info</button>
+                    <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'">Check out the brochure</button>
+                </div>
+            </div>
+        </div>
+        <div style="width: 60%;" class="flex justify-center">
+            <img src="controlpanel2.webp" alt="Control Panel">
+        </div>
+    </div>
 
+    <div style="width: 100%; height: 100px;"></div>
+
+    <div class="w-full flex md:flex-row flex-col-reverse justify-center items-center md:px-32">
+        <div class="random flex flex-col md:flex-row-reverse">
+            
+            <div class="w-full font-medium" style="font-family: 'San Francisco';">
+                <h3 class="font-bold mt-8">Relays/Timers with Base:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Control the timing and sequence of operations, essential for automating the fire pump system and reducing manual intervention.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Two-Pole Breaker:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Provides protection for circuits with lower power requirements, helping to prevent electrical overloads and ensuring system safety.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Three-Pole Breaker:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Handles higher power loads, designed to protect the main power circuits from damage due to overcurrent or short circuits.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Contactor:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">A crucial component for controlling high-power circuits in the panel, the contactor allows for safe switching of the fire pump motor.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Overload Protection:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Protects the pump motor from excessive current, reducing the risk of overheating and prolonging the motor’s lifespan.</li>
+                </ul>
+                <h3 class="font-bold mt-8">Terminal Block:</h3>
+                <ul class="list-disc list-inside">
+                    <li class="listLeft">Provides an organized and secure connection point for wiring, ensuring all connections are safe and accessible for maintenance.</li>
+                </ul>
+            </div>
+
+            
+        </div>
+        <div style="width: 60%;" class="flex justify-center">
+            <img src="controlpanel3.webp" alt="Control Panel">
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 100px;"></div>
+
+    <div class="services1">
+        <div class="services2">
+            <h2 style="display: flex;
+                    font-size: 3em;
+                    font-family: 'Koulen', sans-serif;">Contracting Department</h2>
+            <p>Our Contracting Department offers comprehensive services, including the supply, installation, testing, commissioning, and maintenance of firefighting systems, fire alarm systems, and all types of pumps.</p>
+            <div class="services_cta">
+                <button onclick="window.location.href='Contact.html'">Contact us</button>
+                <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'">Check out the brochure</button>
+            </div>
+        </div>
+        <div class="services3">
+            <img src="services.jpg">
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 100px;"></div>
 
     <footer>
         <div class="footerleft">
