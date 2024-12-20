@@ -391,6 +391,11 @@ section {
     z-index: 2;
 }
 
+.san {
+    font-family: 'San Francisco';
+}
+
+
 .text-block-line {
     display: flex;
     justify-content: center;
