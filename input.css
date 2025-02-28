@@ -24,6 +24,41 @@ nav {
     position: relative; /* Ensure it is positioned to respect z-index */
 }
 
+
+
+.dad {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border: 4px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Pseudo-element for the animated border */
+.dad::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #ff4d4d;
+    box-sizing: border-box;
+    transform: scale(0);
+    border-radius: 20px;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Expands the border when hovering */
+.dad:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
 @font-face {
     font-family: "18 Khebrat Musamim";
     src: url("18 Khebrat Musamim Bold.ttf");
@@ -904,6 +939,9 @@ body.no-scroll {
     display: flex;
 }
 
+.Ar {
+    font-family: '18 Khebrat Musamim';
+}
 
 .small_about_image_container img {
     height: 100%;
@@ -1161,6 +1199,17 @@ body.no-scroll {
     .footer_text {
         margin-right: auto;
         margin-left: 20px;
+    }
+
+    .organization_chart {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .organization_chart img {
+        width: 100%;
+        object-fit: cover;
     }
 
 
@@ -1487,7 +1536,7 @@ footer {
 }
 
 .logo-track {
-    display: inline-block;
+    display: flex;
     height: 50%;
     animation: slide 30s linear infinite;
 }

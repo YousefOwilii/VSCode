@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAS - About</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=18+Khebrat+Musamim&display=swap" rel="stylesheet">
+    <script src="logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+
+    <style>
+        #text {
+            max-width: 60vw;
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .textbox2 {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .stories_About {
+                font-size: 20px;
+                max-width: 40vw;
+            }
+
+            #text {
+                max-width: 40vw;
+                font-size: 20px;
+            }
+
+            .name_About {
+                max-width: 40vw;
+                font-size: 20px;
+            }
+
+            .imgholder {
+                margin-right: 0;
+                max-width: 20vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #text {
+                display: inline;
+                border-right: 2px solid;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-left: 0;
+                font-family: "San Francisco";
+                font-size: 25px;
+                margin-top: 0;
+            }
+
+            .name_About {
+                margin-bottom: 0;
+                margin-left: 0;
+                font-family: "San Francisco";
+                font-size: 25px;
+            }
+
+            .textbox2 {
+                margin-top: 80px;
+            }
+
+            .typewriter {
+                margin-top: 0;
+            }
+
+            .imgholder {
+                display: none;
+            }
+        }
+
+        .container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <nav>
+        <img src="Logo.png" class="headerEmblem" alt="TAS Logo" href="indexAr.html">
+        <img src="Logo.png" class="headerEmblem2" alt="TAS Logo">
+        <a href="about.html" ><div class="flex flex-col items-center mr-3 dad">
+          <img class="size-6" src="dhad.png" alt="">
+          <p>تغير اللغة</p>
+        </div>
+      </a>
+      <a href="ContactAr.html"><h4 class="Home" href="" style="font-family: '18 Khebrat Musamim'">تواصل معنا</h4></a>
+      <h4 class="About" style="font-family: '18 Khebrat Musamim'">تعرف علينا</h4>
+      <a href="ProductsAr.html"><h4 class="Newsletter" href="" style="font-family: '18 Khebrat Musamim'">المنتجات</h4></a>
+      <a href="IndexAr.html"><h4 class="Touch Ar" href="" style="font-family: '18 Khebrat Musamim'">الرئيسية</h4></a>
+    </nav>
+
+    <div class="container" style="display: none;"> </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; width: 100%;">
+        <div>
+            <p style="margin-top: 50px; font-family: '18 Khebrat Musamim'; font-size: 3em; text-align: center;">مؤسسة عبر البحار العربية</p>
+        </div>
+        <div>
+            <p style="text-align: center; font-family: '18 Khebrat Musamim'; font-size: 1.5em;">منذ عام ١٩٩٨</p>
+        </div>
+    </div>
+    <h2 style="font-family: '18 Khebrat Musamim'; font-size: 2.5em; margin-top: 50px; margin-right: 10%; text-align: right; margin-bottom: 30px;">معلومات عننا</h2>
+    <div class="divtop">
+        <div class="text-block-line flex-row-reverse text-right text-2xl">
+            <div class="text-block">
+                <p>
+                    <b>هدفنا</b> <br> القيام بالأمور بشكل صحيح من المرة الأولى، في كل مرة، والسعي لتجاوز توقعات العملاء كلما أمكن ذلك
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>عملية إدارة الأعمال</b> <br>سيكون نظام أعمالنا متوافقًا مع متطلبات معايير NFPA.
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>مبادئ العمل</b> <br> الجودة تنبع من التزام الفريق بالخدمة والتميز، وهذا المبدأ يشكل أحد أسس عملنا
+                </p>
+            </div>
+        </div>
+        <div style="height: 100px;"></div>
+        <div class="text-block-line flex-row-reverse text-right text-2xl">
+            <div class="text-block">
+                <p>
+                    <b>التركيز على العميل</b> <br>متطلبات العملاء تأتي أولًا. تبدأ الجودة وتنتهي بالعميل، ونسعى دائمًا لتلبية احتياجاته. ينعكس ذلك في مرونتنا، سواء على مستوى الأفراد أو المنظمة ككل
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>العلاقات</b> <br>نقيم علاقات متبادلة المنفعة مع العملاء والموردين
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>الابتكار</b>  <br>نبحث عن الحلول الإبداعية ونصممها ونوفر المنتجات والخدمات المبتكرة
+                </p>
+            </div>
+        </div>
+        <div style="height: 100px;"></div>
+        <div class="text-block-line flex-row-reverse text-right text-2xl">
+            <div class="text-block">
+                <p>
+                    <b>العمل الجماعي</b> <br>يعمل موظفونا معًا كفريق واحد لتلبية احتياجات عملائنا
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>التركيز على العمليات</b><br> نوجه موظفينا نحو عمليات عملية لضمان نتائج ثابتة ومستقرة
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    <b>التحسين المستمر</b> <br>من خلال مراجعة الإدارة لنظام إدارة الأعمال لدينا، نسعى إلى تحسين الأداء والعمليات والمنتجات والخدمات بشكل مستمر
+                </p>
+            </div>
+        </div>
+        <div style="height: 100px;"></div>
+        <div class="text-block-line text-right text-2xl">
+            <div class="text-block">
+                <p>
+                    <b>تطوير الموظفين</b><br>من خلال التوجيه المستمر، نخلق ثقافة تمكّن الموظفين من اكتساب المهارات وتحمل المسؤولية عن نتائج أعمالهم، مما يسهم في نجاح الشركة
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us !text-right">
+        <p>
+            <b>هدفنا</b> <br> القيام بالأمور بشكل صحيح من المرة الأولى، في كل مرة، والسعي لتجاوز توقعات العملاء كلما أمكن ذلك
+        </p>
+        <p>
+            <b>عملية إدارة الأعمال</b> <br>سيكون نظام أعمالنا متوافقًا مع متطلبات معايير NFPA.
+        </p>
+        <p>
+            <b>مبادئ العمل</b> <br> الجودة تنبع من التزام الفريق بالخدمة والتميز، وهذا المبدأ يشكل أحد أسس عملنا
+        </p>
+        <p>
+            <b>التركيز على العميل</b> <br>متطلبات العملاء تأتي أولًا. تبدأ الجودة وتنتهي بالعميل، ونسعى دائمًا لتلبية احتياجاته. ينعكس ذلك في مرونتنا، سواء على مستوى الأفراد أو المنظمة ككل
+        </p>
+        <p>
+            <b>العلاقات</b> <br>نقيم علاقات متبادلة المنفعة مع العملاء والموردين
+        </p>
+        <p>
+            <b>الابتكار</b>  <br>نبحث عن الحلول الإبداعية ونصممها ونوفر المنتجات والخدمات المبتكرة
+        </p>
+        <p>
+            <b>العمل الجماعي</b> <br>يعمل موظفونا معًا كفريق واحد لتلبية احتياجات عملائنا
+        </p>
+        <p>
+            <b>التركيز على العمليات</b><br> نوجه موظفينا نحو عمليات عملية لضمان نتائج ثابتة ومستقرة
+        </p>
+        <p>
+            <b>التحسين المستمر</b> <br>من خلال مراجعة الإدارة لنظام إدارة الأعمال لدينا، نسعى إلى تحسين الأداء والعمليات والمنتجات والخدمات بشكل مستمر
+        </p>
+        <p>
+            <b>تطوير الموظفين</b><br>من خلال التوجيه المستمر، نخلق ثقافة تمكّن الموظفين من اكتساب المهارات وتحمل المسؤولية عن نتائج أعمالهم، مما يسهم في نجاح الشركة
+        </p>
+    </div>
+
+    <h2 style="display: flex;
+    justify-content: end;
+    margin-right: 10vw;
+    font-size: 3em;
+    font-family: '18 Khebrat Musamim'; margin-top: 120px;">الكتيب</h2>
+
+<div class="download_brochure_div md:flex-row-reverse">
+    <div class="download_brochure_text !text-right">
+        <p>استكشف كتيبنا للتعرف على مجموعتنا الكاملة من الخدمات، بما في ذلك التوريد والتركيب والصيانة لأنظمة مكافحة الحرائق، وأنظمة إنذار الحريق، ومختلف أنواع المضخات. يسلط الكتيب الضوء على التزامنا بالجودة والابتكار ورضا العملاء، ويقدم نظرة شاملة حول كيفية تلبية احتياجاتك في السلامة والتشغيل بكفاءة</p>
+        <button style="font-family: '18 Khebrat Musamim'" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1fea76IowAttt93V1lOai7BeCPf-3q1Nk'" class="download_brochure_button">تحميل الكتيب</button>
+    </div>
+    <div class="download_brochure_image">
+        <img src="brochure_mockup.webp" alt="Brochure Image">
+    </div>
+</div>
+
+<h2 style="display: flex;
+justify-content: end;
+margin-right: 5vw;
+font-size: 3em;
+font-family: '18 Khebrat Musamim'; margin-top: 120px;">الهيكل التنظيمي</h2>
+
+
+<link rel="stylesheet" href="magnify.css">
+<script src="jquery.magnify.js" charset="UTF-8"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<div class="download_brochure_div md:flex-row-reverse text-right md:text-2xl text-lg md:mt-0 mt-5">
+    <div class="download_brochure_text">
+        <p>هذا هو الهيكل التنظيمي لشركتنا، حيث يبدأ من المدير العام في القمة، وهو المسؤول عن الإشراف على العملية التشغيلية بالكامل. تحت إدارة المدير العام، توجد الأقسام الرئيسية مثل قسم الهندسة، الذي يشمل أقسام التسويق والمبيعات، المناقصات، التنفيذ، والجودة. تتولى هذه الأقسام كل ما يتعلق بعلاقات العملاء، وإدارة المشاريع، والتقييمات الفنية.
+
+            بالإضافة إلى ذلك، هناك الأقسام الداعمة مثل الشؤون المالية، الشؤون القانونية، والشؤون الإدارية، والتي تتولى إدارة الأمور المالية، والمسائل القانونية، وتكنولوجيا المعلومات، والموارد البشرية، والإدارة العامة. يلعب كل قسم دورًا حيويًا في ضمان سير العمل بكفاءة وسلاسة داخل الشركة</p>
+    </div>
+    <div class="organization_chart" id="organization_chart">
+        <img src="Organization chart.png" id="image" class="zoom" data-magnify-src="Organization chart.png">
+        <script>
+            $(document).ready(function() {
+              $('.zoom').magnify();
+            });
+            </script>
+    </div>
+</div>
+
+<div id="scrollToFirst"></div>
+<div id="scrollToSecond"></div>
+<div class="containerr" style="display: none;"></div>
+<div id="text" style="display: none;"></div>
+
+        
+        
+
+
+
+<div id="phoneMenu" class="phone-menu">
+    <div class="menu-content">
+        <span class="close-menu">&times;</span>
+        <a href="IndexAr.html"><h4 class="Home" href="" style="font-family: '18 Khebrat Musamim'">الرئيسية</h4></a>
+        <a href="ProductsAr.html"><h4 class="Newsletter" href="" style="font-family: '18 Khebrat Musamim'">المنتجات</h4></a>
+    <a href="aboutAr.html"><h4 class="About" style="font-family: '18 Khebrat Musamim'">تعرف علينا</h4></a>
+    <a href="ContactAr.html"><h4 class="Touch" href="" style="font-family: '18 Khebrat Musamim'">تواصل معنا</h4></a>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+</body>
+
+<footer class="bg-white shadow-md text-black w-full">
+    <div class="hidden lg:flex flex-col justify-between h-[300px] px-5">
+      <div class="flex justify-center items-center h-[150px] gap-10">
+        <img src="Logo.png" alt="TAS Logo" class="h-[70px]">
+        <div class="w-[1px] h-[100px] bg-gray-400"></div>
+        <p class="font-sans text-xl">Since 1998</p>
+        <div class="w-[1px] h-[100px] bg-gray-400"></div>
+        <p class="font-sans text-sm min-w-[370px]">
+          Office: 3865 King Fahd St. Madinat Al Umal, Dammam 32253<br>
+          Inventory: Abu Al Hassah Zahrawy Street, Al Khalidiyah Ash Shamaliyah, Dammam 32231<br>
+          C.R2050036728<br>
+          Tel.: 013 - 8141435, Fax: 013 - 857 8228, Phone: 056 096 0030
+        </p>
+      </div>
+      <div class="flex justify-center items-center h-[150px] gap-10">
+        <p>© Trans Arabian Seas Trading Inc. 2024. All rights reserved. <br>Support: <b>sales@transarabianseas.com</b></p>
+        <a href="https://www.facebook.com/profile.php?id=100071247940162&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+          <img src="facebook_icon.png" alt="Facebook" class="h-[30px] mx-2">
+        </a>
+        <a href="https://x.com/TASTICORP" target="_blank">
+          <img src="twitter.webp" alt="Twitter" class="h-[30px] mx-2">
+        </a>
+        <a href="https://www.instagram.com/transarabianseas/" target="_blank">
+          <img src="instagram.webp" alt="Instagram" class="h-[30px] mx-2">
+        </a>
+      </div>
+    </div>
+    <div class="lg:hidden flex flex-col items-center py-5">
+      <div class="flex items-center gap-3 mb-5">
+        <img src="Logo.png" alt="TAS Logo" class="h-[70px]">
+        <div class="w-[1px] h-[70px] bg-gray-400"></div>
+        <p class="font-sans text-xl">Since 1998</p>
+      </div>
+      <p class="font-sans text-sm text-center px-5 mb-5">
+        Office: 3865 King Fahd St. Madinat Al Umal, Dammam 32253<br>
+        Inventory: Abu Al Hassah Zahrawy Street, Al Khalidiyah Ash Shamaliyah, Dammam 32231<br>
+        C.R2050036728<br>
+        Tel.: 013 - 8141435, Fax: 013 - 857 8228, Phone: 056 096 0030
+      </p>
+      <div class="flex flex-col items-center gap-3">
+        <p class="text-center">© Trans Arabian Seas Trading Inc. 2024. All rights reserved. <br>Support: <b>sales@transarabianseas.com</b></p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/profile.php?id=100071247940162&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+            <img src="facebook_icon.png" alt="Facebook" class="h-[30px]">
+          </a>
+          <a href="https://x.com/TASTICORP" target="_blank">
+            <img src="twitter.webp" alt="Twitter" class="h-[30px]">
+          </a>
+          <a href="https://www.instagram.com/transarabianseas/" target="_blank">
+            <img src="instagram.webp" alt="Instagram" class="h-[30px]">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
