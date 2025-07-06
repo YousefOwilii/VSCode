@@ -24,7 +24,15 @@ nav {
     position: relative; /* Ensure it is positioned to respect z-index */
 }
 
-
+.menu-button {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transform: rotate(90deg);
+}
 
 .dad {
     position: relative;
@@ -464,9 +472,7 @@ section {
     padding-right: 10%;
 }
 
-.text-block {
-    width: 30%;
-}
+
 
 .t {}
 
@@ -1109,6 +1115,11 @@ body.no-scroll {
         margin-right: auto;
         margin-left: auto;
         display: inline;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 40px;
     }
 
     .centered {
