@@ -1,7 +1,3 @@
-
-
-
-
 // script.js
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -94,10 +90,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Mobile Menu Toggle
     const headerEmblem2 = document.querySelector('img.headerEmblem2');
+    const menuButton = document.querySelector('.menu-button');
     const phoneMenu = document.querySelector('.phone-menu');
     const closeMenuButton = document.querySelector('.close-menu');
 
-    headerEmblem2.addEventListener('click', () => {
+    menuButton.addEventListener('click', () => {
         phoneMenu.classList.add('show');
         document.body.classList.add('no-scroll');
     });
@@ -114,7 +111,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         var overlay = document.getElementById("overlay");
         var closeMenu = document.querySelector(".close-menu");
     
-        document.querySelector(".headerEmblem2").addEventListener("click", function() {
+        document.querySelector(".menu-button").addEventListener("click", function() {
             menu.style.display = "block";
             overlay.style.display = "block";
             console.log("Menu opened");
