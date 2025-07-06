@@ -446,6 +446,10 @@ section {
     gap: 30px;
 }
 
+.text-block {
+    width: 100%;
+}
+
 .about-us {
     display: none;
 }
